@@ -50,7 +50,7 @@
         android:textStyle="italic" />
 
     <EditText
-        android:id="@+id/PersonName"
+        android:id="@+id/username"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/app_name"
