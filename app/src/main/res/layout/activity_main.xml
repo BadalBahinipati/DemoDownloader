@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/app_logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="28dp"
         android:gravity="center"
         android:text="Demo Downloader"
         android:textColor="@color/yellow"
@@ -45,27 +45,78 @@
         android:layout_marginEnd="23dp"
         android:gravity="center"
         android:text="Sign up"
-        android:textStyle="italic"
         android:textColor="@color/yellow"
-        android:textSize="26dp" />
+        android:textSize="22dp"
+        android:textStyle="italic" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/PersonName"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/app_name"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="38dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="294dp"
+        android:layout_marginBottom="306dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="15dp"
         android:ems="10"
         android:hint="username"
-        android:background="#30ffffff"
         android:inputType="textPersonName"
         android:textColor="@color/white"
         android:textColorHint="@color/yellow" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login"
+        android:layout_below="@+id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="31dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="numberPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/yellow" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="#FFD700"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/reset"
+        android:layout_width="169dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="106dp"
+        android:gravity="center"
+        android:text="Forgot password?"
+        android:textColor="@color/yellow"
+        android:textStyle="italic"
+        android:textSize="15dp" />
 
 
 </RelativeLayout>
