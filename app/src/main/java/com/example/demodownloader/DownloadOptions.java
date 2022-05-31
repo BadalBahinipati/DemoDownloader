@@ -15,10 +15,10 @@ public class DownloadOptions extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_download_options);
 
-        Button web = (Button) findViewById(R.id.op1);
+        Button wrt = (Button) findViewById(R.id.op1);
         Button dev = (Button) findViewById(R.id.op2);
 
-        web.setOnClickListener(new View.OnClickListener() {
+        wrt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DownloadOptions.this, WriteFile.class);
