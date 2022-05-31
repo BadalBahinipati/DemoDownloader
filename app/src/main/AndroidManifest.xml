@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoDownloader">
         <activity
+            android:name=".DriveDownload"
+            android:exported="false" />
+        <activity
             android:name=".DownloadOptions"
             android:exported="false" />
         <activity
