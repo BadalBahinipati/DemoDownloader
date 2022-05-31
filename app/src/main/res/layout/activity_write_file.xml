@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".WriteFile">
 
+  <Button
+      android:id="@+id/read"
+      android:layout_width="153dp"
+      android:layout_height="57dp"
+      android:layout_marginEnd="44dp"
+      android:text="Read"
+      android:textSize="17dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text"
+      app:layout_constraintVertical_bias="0.231" />
+
   <EditText
       android:id="@+id/text"
       android:layout_width="match_parent"
@@ -51,14 +64,31 @@
       android:id="@+id/write"
       android:layout_width="153dp"
       android:layout_height="57dp"
+      android:layout_marginStart="36dp"
       android:text="Write"
-      android:textStyle="bold"
       android:textSize="17dp"
+      android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.503"
+      app:layout_constraintEnd_toStartOf="@+id/read"
+      app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/text"
-      app:layout_constraintVertical_bias="0.364" />
+      app:layout_constraintVertical_bias="0.231" />
+
+  <TextView
+      android:id="@+id/content"
+      android:layout_width="382dp"
+      android:layout_height="117dp"
+      android:gravity="center"
+      android:text="File Content"
+      android:textColor="@color/black"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.495"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text"
+      app:layout_constraintVertical_bias="0.714" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
