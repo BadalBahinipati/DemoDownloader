@@ -21,7 +21,7 @@ public class DownloadOptions extends AppCompatActivity {
         web.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DownloadOptions.this, DriveDownload.class);
+                Intent intent = new Intent(DownloadOptions.this, WriteFile.class);
                 Toast.makeText(DownloadOptions.this, "Selected option 1", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
