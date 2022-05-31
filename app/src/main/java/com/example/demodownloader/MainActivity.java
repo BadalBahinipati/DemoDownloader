@@ -2,6 +2,7 @@ package com.example.demodownloader;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,9 +30,11 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DownloadOptions.class);
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("12345")){
                     //correct
                     Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+                    startActivity(intent);
                 }
                 else{
                     //incorrect

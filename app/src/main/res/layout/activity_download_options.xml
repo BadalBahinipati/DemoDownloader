@@ -6,4 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".DownloadOptions">
 
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="236dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textSize="37dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="285dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Select an option to proceed"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/op1"
+        android:layout_width="283dp"
+        android:layout_height="64dp"
+        android:drawableLeft="@drawable/ic_baseline_browser_updated_24"
+        android:text="Download from web"
+        app:layout_constraintBottom_toTopOf="@+id/op2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <Button
+        android:id="@+id/op2"
+        android:layout_width="283dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="204dp"
+        android:drawableLeft="@drawable/ic_baseline_sd_storage_24"
+        android:text="Get file from device"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/op1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/op1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
